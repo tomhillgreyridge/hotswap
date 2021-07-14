@@ -60,11 +60,11 @@ Steps for getting this working are pretty easy
 2. Install on your machine - from memory this was just extracting the zip file
 3. Register the JVM with IntelliJ through module settings 
 
-![img.png](images/img.png)
+![img.png](src/main/kotlin/images/img.png)
 
 4. Modify your run configuration to use DCEVM and to use the internal hotswap agent
 
-![img_1.png](images/img_1.png)
+![img_1.png](src/main/kotlin/images/img_1.png)
 
 5. Start the app using this run configuration **in debug mode**.
 
