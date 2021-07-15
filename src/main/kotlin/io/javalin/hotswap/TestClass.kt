@@ -4,6 +4,6 @@ import io.javalin.http.Context
 
 object TestClass {
   fun home(ctx: Context){
-    ctx.result("hello world")
+    ctx.result("hello world updated")
   }
 }
