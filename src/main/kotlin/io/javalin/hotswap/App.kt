@@ -16,8 +16,8 @@ object App {
     server.get("/new",TestClass::home)
   }
 
-  fun reload(){
-    AppRunner.reload()
+  fun restart(){
+    start()
   }
 }
 
@@ -25,5 +25,9 @@ object App {
 //then terminates.  Unfortunately, stopping the Javalin server causes the method to terminate and so we never get the
 //reload!
 fun main(args: Array<String>){
-  AppRunner.start()
+  App.start()
+
+  while(true){
+    Thread.sleep(200)
+  }
 }
